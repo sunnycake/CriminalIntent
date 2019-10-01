@@ -8,6 +8,8 @@ import androidx.fragment.app.FragmentManager;
 
 public abstract class SingleFragmentActivity extends AppCompatActivity {
 
+    protected abstract Fragment createFragment();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
